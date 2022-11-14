@@ -15,6 +15,8 @@ Install kit by running
 npm install
 ```
 
+Start the application by running
+
 ```
 npm start
 ```
