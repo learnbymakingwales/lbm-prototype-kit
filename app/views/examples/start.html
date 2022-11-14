@@ -6,19 +6,9 @@
 
 {% block header %}
   <!-- Blank header with no service name for the start page -->
-  <header class="govuk-header " role="banner" data-module="govuk-header">
-    <div class="govuk-header__container govuk-width-container">
-      <div class="govuk-header__logo">
-        <a href="#" class="govuk-header__link govuk-header__link--homepage">
-          <span class="govuk-header__logotype">
-            <span class="govuk-header__logotype-text">
-              Prototyping kit
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </header>
+  {{ appHeader({
+    containerClasses: "govuk-width-container"
+  }) }}
 {% endblock %}
 
 {% block beforeContent %}
@@ -67,8 +57,6 @@
       <p>You can also <a href="#">register by post</a>.</p>
 
       <p>The online service is also <a href="#">available in Welsh (ar gael yn Gymraeg)</a>.</p>
-      
-      <p>You can use govuk classes or <a href="#" class="lbm-link">lbm classes</a></p>
 
     </div>
 

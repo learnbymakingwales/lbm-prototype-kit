@@ -1,8 +1,9 @@
 // top bar
 
 .govuk-header {
+    --header-background-colour: var(--nrw-grey-light);
     --header-border-colour: var(--nrw-green);
-    background: #E9E9EA;
+    background: var(--header-background-colour);
     border-color: var(--header-border-colour);
 }
 
