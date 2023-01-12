@@ -58,3 +58,13 @@ In the Welsh page put
 ```
 
 There is an example start page in the `app/views/examples` folder.
+
+## Work in progress
+
+It is early days for this prototype kit.
+
+A few things we'd like to work on include:
+
+* making it easier to create bilingual prototypes (can we use a config file for common site wide translations?)
+* reduce the references to `govuk` e.g. in class names. We want to do this to reduce complexity for users and to make the prototype kit feel more general purpose than govuk owned.
+* work out how to add Wales specific components when they get produced
