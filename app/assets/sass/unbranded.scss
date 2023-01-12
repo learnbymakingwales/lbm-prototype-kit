@@ -17,3 +17,7 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 @import "vendor/all";
 
 @import "reskin/reskin";
+
+// import individual to give more control over what is included
+@import "components/language-switcher";
+@import "components/prototype-banner";

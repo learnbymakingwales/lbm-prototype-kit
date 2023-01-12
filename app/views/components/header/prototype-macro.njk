@@ -1,0 +1,23 @@
+{% macro prototypeHeader(params) %}
+
+  {% from "components/header/macro.njk" import appHeader %}
+  {% from "components/language-switcher/macro.njk" import appLanguageSwitcher %}
+
+  {{ appHeader({
+    containerClasses: "govuk-width-container",
+    site_name: params.sitename | default('Test prototype'),
+    bilingual: {
+      html: appLanguageSwitcher({
+        lang: params.lang,
+        href: params.alternative.href
+      })
+    }
+  }) }}
+  <div class="govuk-width-container">
+    <p class="govuk-body prototype-banner">
+      <span class="prototype-tag">Prototype</span>
+      <span class="prototype-tag__text">This is a proof of concept to help us test ideas.</span>
+    </p>
+  </div>
+
+{% endmacro %}
