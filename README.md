@@ -20,3 +20,41 @@ Start the application by running
 ```
 npm start
 ```
+
+## Bilingual prototypes
+
+Currently, it is a bit clunky but you can still do it.
+
+By default the prototype banner has a language switcher button. It is disabled until you hook up the right pages.
+
+Firstly, make sure you have 2 pages, one for the English version and one for the Welsh version.
+
+Need to overwrite the `header` block in both.
+
+In the English page put
+
+```
+{% block header %}
+  {{ prototypeHeader({
+    "lang": "en",
+    "alternative": {
+      "href": "link to welsh version"
+    }
+  }) }}
+{% endblock %}
+```
+
+In the Welsh page put
+
+```
+{% block header %}
+  {{ prototypeHeader({
+    "lang": "cy",
+    "alternative": {
+      "href": "link to english version"
+    }
+  }) }}
+{% endblock %}
+```
+
+There is an example start page in the `app/views/examples` folder.

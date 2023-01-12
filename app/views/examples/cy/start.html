@@ -1,5 +1,14 @@
 {% extends "layout_prototype.html" %}
 
+{% block header %}
+  {{ prototypeHeader({
+    "lang": "cy",
+    "alternative": {
+      "href": "/examples/en/start.html"
+    }
+  }) }}
+{% endblock %}
+
 {% block beforeContent %}
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
